@@ -6,7 +6,12 @@
 **[中文](#chinese-version)** | **[English](README_en.md)**  
 
 ---
+### 科哥二次开发运行截图：
+![image.png](https://codewithgpu-image-1310972338.cos.ap-beijing.myqcloud.com/212292-880545294-wYXcwRTzlXiJd13ybP27.png)
 
+![image.png](https://codewithgpu-image-1310972338.cos.ap-beijing.myqcloud.com/212292-795968748-HmjSEYtKhvaETjowss4y.png)
+
+![image.png](https://codewithgpu-image-1310972338.cos.ap-beijing.myqcloud.com/212292-882896811-pg32cgJxFkErdSVWjWEt.png)
 
 <a name="chinese-version"></a>
 
@@ -31,9 +36,6 @@ HeyGem-Linux-Python-Hack 是一个基于 Python 的数字人项目，它从 [Hey
 * Python 驱动: 使用 Python 语言开发，易于理解和扩展。
 * 开发者友好: 易于使用和扩展。
 * 完全离线。  
-
-微信群  
-![](./1.jpeg)
 
 ## 开始使用
 
