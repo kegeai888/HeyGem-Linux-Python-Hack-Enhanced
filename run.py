@@ -59,9 +59,21 @@ def write_video(
     watermark_switch=0,
     digital_auth=0,
 ):
-    output_mp4 = os.path.join(temp_dir, "{}-t.mp4".format(work_id))
+    # 修改输出目录为 /root/outputs
+    base_output_dir = '/root/outputs'
+    os.makedirs(base_output_dir, exist_ok=True)
+    
+    # 构建新的临时文件和结果文件路径
+    temp_output_dir = os.path.join(base_output_dir, 'temp')
+    final_output_dir = os.path.join(base_output_dir, 'results')
+    
+    os.makedirs(temp_output_dir, exist_ok=True)
+    os.makedirs(final_output_dir, exist_ok=True)
+    
+    output_mp4 = os.path.join(temp_output_dir, "{}-t.mp4".format(work_id))
     fourcc = cv2.VideoWriter_fourcc(*"mp4v")
-    result_path = os.path.join(result_dir, "{}-r.mp4".format(work_id))
+    result_path = os.path.join(final_output_dir, "{}-r.mp4".format(work_id))
+    
     video_write = cv2.VideoWriter(output_mp4, fourcc, fps, (width, height))
     print("Custom VideoWriter init done")
     try:
@@ -147,7 +159,8 @@ def write_video(
         subprocess.call(command, shell=True)
         print("###### Custom Video Writer write over")
         print(f"###### Video result saved in {os.path.realpath(result_path)}")
-        exit(0)
+        # 移除错误的exit调用
+        # exit(0)
         result_queue.put([True, result_path])
     except Exception as e:
         logger.error(

@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Cache directories
+temp/
+.cache/
+tensorrt_cache/
+
+# Model files (large files)
+*.onnx
+*.pth
+*.pt
+*.model
+
+# Checkpoints
+checkpoints/
+*/checkpoints/
+
+# Pretrained models
+pretrain_models/
+*/pretrain_models/
+
+# Data directories
+inputs/
+result/
+example/aidata/
+
+# Log files
+*.log
+log/
+
+# GPU test results
+gpu_optimization_report.json
+gpu_performance_test_*.json
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Requirements backup
+requirements-Copy*.txt
+run-Copy*.py
+
+# Shell script
+cc.sh
